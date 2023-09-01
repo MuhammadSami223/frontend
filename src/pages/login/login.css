@@ -1,0 +1,16 @@
+@media screen and (max-width:412px) {
+   .textcontainer .input{
+        width: 250px;
+     margin-left: -196px;
+
+    }
+    .loginButton{
+        margin-left: -194px;
+    }
+     .textcontainer h2{
+        margin-left: -230px;
+     }
+     .account{
+      margin-left: -180px;
+     }
+   }
