@@ -9,6 +9,14 @@
 
 }
 @media screen and (max-width:414px) {
+ .spinner{
+        margin-left: 100px;
+        
+    }
+    .hr{
+        width: 122px;
+        margin-left: 108px;
+    }
     .sproductimg{
         width: 340px;
     margin-left: -12px;
