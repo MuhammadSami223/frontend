@@ -91,11 +91,12 @@
 
 }
 @media screen and (max-width:415px) {
-    .crousel-h4{
-        margin-left: 79px;
-        margin-top: 41px;
+.crousel-h4{
+        margin-left: 75px;
+        margin-top: 45px;
         letter-spacing: 0.1em;
-        width: 210px;
+        width: 221px;
+        font-size: 15px;
     }
         .hr{
             width: 122px;
@@ -103,8 +104,8 @@
             font-size: 5px;
         }
         .crousel-btn{
-            margin-left: 129px;
-            margin-top: 96px;
-            font-size: 10px;
+            margin-left: 146px;
+            margin-top: 66px;
+            font-size: 8px;
         }
 }
