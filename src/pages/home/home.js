@@ -10,12 +10,15 @@ const Home = () => {
   const productContext = useContext(ProductContext);
   const { setProductsGlobally } = productContext;
   const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(false);
 
   const fetchProducts = async () => {
+        setLoading(true)
     const response = await fetch("https://lime-barnacle-yoke.cyclic.app/products/all");
     const data = await response.json();
     setProducts(data.products);
     setProductsGlobally(data.products);
+            setLoading(false)
 
     // console.log(data.products)
   };
@@ -34,6 +37,17 @@ const Home = () => {
       {/* <div className="row"> */}
       {/* <div className="col-lg-3 col-md-3 col-sm-6 "> */}
       <div className="maincart">
+   <div className="maincart">
+    {loading ?(<div className="text-center"><div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div> ):<>
         {products.map((product, index) => {
           return (
             <Link to={`/products/${product._id}`}>
@@ -56,6 +70,7 @@ const Home = () => {
             </Link>
           );
         })}
+        </>}
       </div>
     </div>
   );
