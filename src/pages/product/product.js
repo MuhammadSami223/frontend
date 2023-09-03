@@ -11,6 +11,7 @@ const Product =() =>{
   const navigate = useNavigate()
   const [singleProduct,setSingleProduct] = useState({})
   const [user,setUser]=useState(null)
+  const [loading, setLoading] = useState(false);
   const cartContext= useContext(CartContext)
   const {addToCart,removeFromCart} = cartContext
   const {id} = useParams();
@@ -18,10 +19,12 @@ const Product =() =>{
   
 
     const fetchSingleProduct = async () =>{
+      setLoading(true)
       const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${id}`)
       const data = await response.json()
       console.log(response.json)
       setSingleProduct(data.product)
+      setLoading(false)
     }
     useEffect(()=>{
       fetchSingleProduct()
@@ -62,6 +65,17 @@ navigate("/")
 
       </div>
 <div className="container">
+  {loading ? (<div className="spinner"><div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow my-5" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+  ):<>
 <div className="row">
   <div className="col-sm-12 col-lg-6 col-md-12 col-12">
 <div>
@@ -85,6 +99,7 @@ navigate("/")
   </div>
   </div>
   </div>
+  </>}
   </div>
 
 
