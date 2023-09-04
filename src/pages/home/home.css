@@ -13,7 +13,7 @@
 }
 
 .maincontainer{
- 
+ transition:all ease 0.2s;
     box-shadow: 0 0 6px 6px #eee;
     text-decoration: none;
     display: inline-block;
@@ -22,6 +22,9 @@
     margin-top: 65px;
     margin-bottom: -55px;
     text-decoration: none;
+}
+.maincontainer:hover{
+    scale: 1.1;
 }
 .maincontainer h2,h4,h5{
     list-style: none;
