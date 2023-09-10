@@ -11,9 +11,12 @@
     /* border: 2px solid wheat; */
     /* margin-left: 60px; */
 }
-
+.maincontainer:hover{
+    scale: 1.1;
+}
 .maincontainer{
  
+    transition: all ease 0.2s;
     box-shadow: 0 0 6px 6px #eee;
     text-decoration: none;
     display: inline-block;
@@ -32,7 +35,7 @@
 
 }
 .maincontainer img{
-    width: 173px;
+    width: 171px;
     height: 202px;
 }
 .h2{
@@ -41,4 +44,7 @@
     align-items: center;
     margin-top: 22px;
     font-family: monospace;
+}
+.text-center{
+margin-left: 450px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Crousel() {
   return (
-    <div><div id="carouselExample" className="carousel slide">
+    <div><div id="carouselExample" className="carousel slide margin">
     <div className="carousel-inner">
         <h4 className='crousel-h4'>Headset for all Styles</h4>
         <h5 className='crousel-h5'>STARTING $20</h5>

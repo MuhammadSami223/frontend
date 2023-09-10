@@ -11,7 +11,7 @@ function AddedCart() {
   return (
     <div>
 
-      {cartItems.length? cartItems.map((item)=>{
+      {cartItems.length ?  cartItems.map((item)=>{
         return(
           <div className="main-cart">
            <div> <img src={item.image} alt="" /></div>

@@ -8,9 +8,11 @@ import Cart from './CartSection/AddedCart';
 import { ProductContainer } from './context/productContext';
 import { CartContainer } from './context/cartContext';
 import Login from './pages/login';
-import Editproduct from './pages/editProduct/Editproduct';
 import Register from './register/register';
-import Crousel from './components/Crousel';
+import Editproduct from './pages/editProduct/Editproduct';
+import Order from './order/Order';
+
+
 function App() {
   return (
     <div>
@@ -27,6 +29,7 @@ function App() {
 <Route path='/login' element={<Login/>}/>
 <Route path='/register' element={<Register/>}/>
     <Route path='/cart' element={<Cart/>}/>
+    <Route path='/order' element={<Order/>}/>
 </Routes>
 </BrowserRouter>
         </ProductContainer>

@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import './login.css'
 import TextField from '@mui/material/TextField';
 import { useNavigate ,Link} from 'react-router-dom';
-
+import Snackbar from '@mui/material/Snackbar'
 
 // import CartContext from '../context/cartContext'
 // import { useContext,useState } from 'react'
@@ -13,6 +13,7 @@ const Login = () => {
   const navigate = useNavigate()
   const [userName,setUserName] = useState("")
   const [password,setPassword]= useState("")
+  const [open,setOpen]=useState(false)
   // const [open,setopen]= useState(false)
 
 
@@ -29,7 +30,7 @@ const Login = () => {
   }
   const handleSubmit = async ()=>{
     const userData = {userName,password}; 
-    const response = await fetch("https://lime-barnacle-yoke.cyclic.app/login",{
+    const response = await fetch("https://lime-barnacle-yoke.cyclic.app/users/login",{
       method:"POST",
           headers:{ 
             "Content-Type":"application/json",
@@ -39,11 +40,15 @@ const Login = () => {
         })
         const data = await response.json()
         console.log("response",data)
-      localStorage.setItem( "user", JSON.stringify(data.user))
-      localStorage.setItem ("token", JSON.stringify(data.token))
-navigate('/addproduct')
+        if(data.user){
 
-  }
+          localStorage.setItem( "user", JSON.stringify(data.user))
+          localStorage.setItem ("token", JSON.stringify(data.token))
+          navigate('/addproduct')
+        }
+      
+      setOpen(true)
+    }
   // setopen(true)
   return (
 <>
@@ -70,21 +75,20 @@ navigate('/addproduct')
       label="password" 
       name='password'
       variant="outlined" />
+
+
       <Link to={'/register'}>
  <div className='account'><p>Craete New Account?</p></div>
       </Link>
       
  <button onClick={handleSubmit} className='animated-button loginButton' type="submit"> <span className='span'></span>Login</button>
- {/* <Snackbar
-        open={open}
-        autoHideDuration={6000}
-        // onClose={handleClose}
-        message="login failed"
-        // action={action}
-      /> */}
-
 
 </div>
+ <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        message="login failed"
+   />
 
       </>
 

@@ -69,7 +69,7 @@ const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${i
   return (
 <>
      <div className="textcontainer">
-    <h2>Add Product</h2>
+    <h2>Edit Product</h2>
       <TextField
       fullWidth
       value={singleProduct.productName}
@@ -96,7 +96,7 @@ fullWidth
       rows={4}
       id="outlined-basic" 
       name='description'
-      // label="description" 
+      label="description" 
       variant="outlined" />
     
       <TextField 

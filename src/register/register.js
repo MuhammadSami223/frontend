@@ -40,12 +40,8 @@ const Register = () => {
     
         navigate("/login");
       };
-    
-      useEffect(() => {
-        const isUser = localStorage.getItem("user");
-        if (!isUser) {
-        }
-        }, []);
+      
+     
    
     
 

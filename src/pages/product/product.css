@@ -2,13 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+.container{
+    margin-top: 58px;
+}
+
 .sproductimg{
-    width: 180px;
+    width: 209px;
     /* margin-left: 112px; */
-    height: 200px;
+    height: 256px;
 
 }
 @media screen and (max-width:414px) {
+    .spinner{
+        margin-left: 100px;
+        
+    }
+    .hr{
+        width: 122px;
+        margin-left: 108px;
+    }
     .sproductimg{
         width: 340px;
     margin-left: -12px;
@@ -23,10 +35,7 @@
     height: 585px;
     margin-left: -6px;
 }
-.hr{
-    width: 122px;
-    margin-left: 28px;
-}
+
      }  
 
 
@@ -87,12 +96,26 @@ width: 0;
     
     
 }
-@media screen and (min-width:415px) {
+@media screen and (min-width:900px) {
 
     .singleName{
         font-size: 12px;
-        margin-left: -235px;
-       
+margin-top: 20px;
+margin-left: -190px;
+
+
+    }
+    .crousel-h4{
+        margin-left: 334px;
+        margin-top: 159px;
+        letter-spacing: 0.2em;
+        font-size: 20px;;
+    }
+    .crousel-h5{
+        margin-left: 388px;
+    margin-top: 192px;
+    font-size: 21px;
+    font-weight: 900;
     }
 }
 .single-container h2{
@@ -115,4 +138,9 @@ align-items: center;
 margin: 0 auto;
 
 
+}
+.singleName{
+    font-size: 12px;
+  
+   
 }

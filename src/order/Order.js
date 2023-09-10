@@ -1,33 +1,22 @@
 import React, { useState,useEffect} from 'react'
 // import CartContext from '../context/cartContext'
-import './Addproduct.css'
+
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
-
 
 
 // import CartContext from '../context/cartContext'
 // import { useContext,useState } from 'react'
 
-const ProductAdd = () => {
+const Order = () => {
   const navigate = useNavigate()
   const [productName,setProductName] = useState("")
   const [price,setprice]= useState("")
   const [description,setdescription]= useState("")
   const [image,setimage]= useState("")
-  
 
-  // const handleUpload = async (ev)=>{
-  //   const file = ev.target.files[0]
-  //   const formData = new FormData()
-  //    formData.append("image",file)
-  //   const response = await fetch("http://localhost:8000/uploads",{
-  //     method:"POST",
-  //     body:formData
-  //   })
-  //   const data = await response.json()
-  //   setimage(data.path)
-  // }
+
+
   
   const handleChange = (ev) =>{
     const {name,value} = ev.target;
@@ -56,11 +45,9 @@ const ProductAdd = () => {
       },
       body:JSON.stringify(productData)
     })
-    console.log(response)
-    
+    console.log("response",response)
     navigate('/')
   }
-
   useEffect(()=>{
     const user = localStorage.getItem('user');
     if(!user){
@@ -113,8 +100,10 @@ className='input'
       variant="outlined" /> 
       
  <button onClick={handleSubmit} className='animated-button loginButton' type="submit"> <span className='span'></span>Submit</button>
-</div>
 
+
+
+</div>
 
       </>
 
@@ -123,4 +112,4 @@ className='input'
 
 }
 
-export default ProductAdd
+export default Order
