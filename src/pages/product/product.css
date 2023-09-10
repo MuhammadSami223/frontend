@@ -13,21 +13,20 @@
 
 }
 @media screen and (max-width:414px) {
-<<<<<<< HEAD
-    .spinner{
-=======
+
+
  .spinner{
->>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
+
         margin-left: 100px;
         
     }
     .hr{
         width: 122px;
-<<<<<<< HEAD
+
         margin-left: 108px;
-=======
+
         margin-left: 208px;
->>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
+
     }
     .sproductimg{
         width: 340px;
@@ -147,11 +146,8 @@ margin: 0 auto;
 
 
 }
-<<<<<<< HEAD
+
 .singleName{
     font-size: 12px;
   
-   
-}
-=======
->>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
+
