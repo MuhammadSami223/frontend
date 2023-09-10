@@ -15,8 +15,12 @@
     scale: 1.1;
 }
 .maincontainer{
+<<<<<<< HEAD
  
     transition: all ease 0.2s;
+=======
+ transition:all ease 0.2s;
+>>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
     box-shadow: 0 0 6px 6px #eee;
     text-decoration: none;
     display: inline-block;
@@ -25,6 +29,9 @@
     margin-top: 65px;
     margin-bottom: -55px;
     text-decoration: none;
+}
+.maincontainer:hover{
+    scale: 1.1;
 }
 .maincontainer h2,h4,h5{
     list-style: none;
@@ -45,6 +52,9 @@
     margin-top: 22px;
     font-family: monospace;
 }
+<<<<<<< HEAD
 .text-center{
 margin-left: 450px;
 }
+=======
+>>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2

@@ -86,11 +86,11 @@
         @media screen and (max-width:412px) {
             .textcontainer .input{
                  width: 250px;
-              margin-left: -176px;
+              margin-left: -190px;
          
              }
              .loginButton{
-                 margin-left: -164px;
+                 margin-left: -174px;
              }
               .textcontainer h2{
                  margin-left: -200px;

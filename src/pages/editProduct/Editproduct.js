@@ -72,6 +72,7 @@ const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${i
     <h2>Edit Product</h2>
       <TextField
       fullWidth
+  className='input'
       value={singleProduct.productName}
       onChange={handleChange}
       id="outlined-basic" 
@@ -82,6 +83,7 @@ const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${i
  
       <TextField 
       fullWidth
+className='input'
       value={singleProduct.price}
       onChange={handleChange}
       id="outlined-basic" 
@@ -90,6 +92,7 @@ const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${i
       variant="outlined" />
       <TextField 
 fullWidth
+className='input'
      value={singleProduct.description}
      onChange={handleChange}
       multiline
@@ -101,6 +104,7 @@ fullWidth
     
       <TextField 
       fullWidth
+className='input'
       value={singleProduct.image}
       onChange={handleChange}
       id="outlined-basic" 
@@ -108,7 +112,7 @@ fullWidth
 
       variant="outlined" /> 
       
- <button onClick={handleSubmit} className='animated-button' type="submit"> <span className='span'></span>Submit</button>
+ <button onClick={handleSubmit} className='animated-button loginButton' type="submit"> <span className='span'></span>Submit</button>
 
 
 

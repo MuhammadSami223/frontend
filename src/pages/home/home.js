@@ -20,7 +20,11 @@ const Home = () => {
     const data = await response.json();
     setProducts(data.products);
     setProductsGlobally(data.products);
+<<<<<<< HEAD
     setLoading(false)
+=======
+setLoading(false)
+>>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
     // console.log(data.products)
   };
   
@@ -83,11 +87,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="maincontainer" key={index}>
-// <img src={product.image} alt="" />
-// <h2> {product.productName}</h2>
-//  <h4>Rs.{product.price}</h4>
-// <h5>{product.price}</h5>
-
-// </div>
