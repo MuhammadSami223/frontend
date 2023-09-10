@@ -82,6 +82,19 @@ setLoading(false)
         </>}
       </div>
       <Footer/>
+           <div className="footer-basic">
+    <footer>
+        <div className="socials"><Link to="#"><FaFacebook/></Link><Link to="#"><FaInstagram/></Link><Link to="#"><FaLinkedin/></Link><Link to="#"><FaYoutube/></Link></div>
+        <ul className="list-inline">
+            <li className="list-inline-item"><Link to="">Home</Link></li>
+            <li className="list-inline-item"><Link to="">Services</Link></li>
+            <li className="list-inline-item"><Link to="">About</Link></li>
+            <li className="list-inline-item"><Link to="">Contact us</Link></li>
+        </ul>
+        <p className="copyright">MS Developer © 2023</p>
+    </footer>
+    </div>
+
     </div>
   );
 };
