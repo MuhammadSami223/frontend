@@ -95,11 +95,9 @@
 
 }
 @media screen and (max-width:415px) {
-<<<<<<< HEAD
-    .crousel-h4{
-=======
+
 .crousel-h4{
->>>>>>> 9ebf74cd472d96c0ed9b86078cf83df3fff450e2
+
         margin-left: 75px;
         margin-top: 45px;
         letter-spacing: 0.1em;
