@@ -16,7 +16,8 @@ const Home = () => {
 
   const fetchProducts = async () => {
     setLoading(true)
-    const response = await fetch("https://lime-barnacle-yoke.cyclic.app/products/all");
+    const response = await fetch("https://thoughtful-spacesuit-lamb.cyclic.app
+/products/all");
     const data = await response.json();
     setProducts(data.products);
     setProductsGlobally(data.products);
