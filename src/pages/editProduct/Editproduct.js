@@ -14,7 +14,8 @@ const Editproduct = () => {
   const [singleProduct,setSingleProduct] = useState({})
 
   const fetchSingleProduct = async () =>{
-const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${id}`)
+const response = await fetch(`https://thoughtful-spacesuit-lamb.cyclic.app
+/products/${id}`)
     const data = await response.json()
     setSingleProduct(data.product)
     
@@ -46,7 +47,8 @@ const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/${i
   // }
   const handleSubmit = async ( )=>{
     const productData = {...singleProduct}
-    const response = await fetch(`https://lime-barnacle-yoke.cyclic.app/products/edit/${id}`,
+    const response = await fetch(`https://thoughtful-spacesuit-lamb.cyclic.app
+/products/edit/${id}`,
     {
       method:"PUT",
       headers:{ 
