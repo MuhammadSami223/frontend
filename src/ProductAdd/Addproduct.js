@@ -46,7 +46,8 @@ const ProductAdd = () => {
   }
   const handleSubmit = async ()=>{
     const productData = {productName,price:+price,description,image}
-    const response = await fetch("https://lime-barnacle-yoke.cyclic.app/products/add",
+    const response = await fetch("https://thoughtful-spacesuit-lamb.cyclic.app
+/products/add",
     {
       method:"POST",
       headers:{ 
